@@ -5,7 +5,7 @@ import OrderByAlphaButton from "./OrderByAlphaButton";
 import OrderByGradeButton from "./OrderByGradeButton";
 
 export default function MovieApllication() {
-  //todo är vår variabel, och setTodos är den vi ändrar listan med
+  //movies är vår variabel, och setMovies är den vi ändrar listan med
   const [movies, setMovies] = useState([]);
 
   function addItem(title, grade){
