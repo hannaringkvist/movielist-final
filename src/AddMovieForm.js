@@ -24,7 +24,7 @@ export default function AddMovieForm(props) {
         <option value="5">5</option>
       </select>
 
-      <button type="submit" className="btn btn-success mt-3" onClick={() => props.addItem(titleRef.current.value, gradeRef.current.value)}></button>
+      <button type="submit" className="btn btn-success mt-3" onClick={() => props.addItem(titleRef.current.value, gradeRef.current.value)}>Spara film</button>
     </div>
 
   )
