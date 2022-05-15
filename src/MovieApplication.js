@@ -8,6 +8,7 @@ export default function MovieApllication() {
   //movies är vår variabel, och setMovies är den vi ändrar listan med
   const [movies, setMovies] = useState([]);
 
+  //Funktion för att lägga till en film i listan.
   function addItem(title, grade){
     const newId = movies.length > 0 ? movies[movies.length - 1].id + 1 :1;
 
@@ -22,11 +23,12 @@ export default function MovieApllication() {
     }
   }
 
-
+//Funktion för att ta bort en film när användaren trycker på delete-bilden.
 function deleteItem(id){
   setMovies(movies.filter((item) => item.id !== id));
 }
 
+//Funktion som sorterar filmerna i listan baserat på deras titel
 function orderByAlpha () {
   const sortedData = [...movies].sort((a,b) => {
     return a.title > b.title ? 1 : -1
@@ -34,13 +36,13 @@ function orderByAlpha () {
   setMovies(sortedData)
 }
 
+//Funktion som sorterar filmerna i listan baserat på betyg
 function orderByNumber(){
   const sortedData = [...movies].sort((a,b) => {
     return a.grade > b.grade ? 1 : -1
   })
   setMovies(sortedData)
 }
-
 
 return (
     <div>

@@ -5,7 +5,7 @@ export default function AddMovieForm(props) {
   const titleRef = useRef();
   const gradeRef = useRef();
 
-
+  //Hela formuläret där användaren skriver sin input om e film.
   return (
     <div>
      <legend>Lägg till en film</legend>
@@ -26,6 +26,5 @@ export default function AddMovieForm(props) {
 
       <button type="submit" className="btn btn-success mt-3" onClick={() => props.addItem(titleRef.current.value, gradeRef.current.value)}>Spara film</button>
     </div>
-
   )
 }

@@ -1,5 +1,6 @@
 import React from "react";
 
+//Används för att styla bilderna som läggs till. Stylar stjärn-bilden och delete-bilden.
 const mystyle = {
   height: "60px",
   width: "60px"
