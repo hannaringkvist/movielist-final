@@ -1,3 +1,6 @@
+# About the project
+This is a movie application that allows the user to add movies with a title and grade to a list. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
